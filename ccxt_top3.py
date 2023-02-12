@@ -28,6 +28,8 @@ ask = get_bid_ask(symbol)[1]
 params = {'timeInForce': 'PostOnly', 'reduceOnly': True, 'triggerPrice': 10000, 'triggerBy': 'MarkPrice'}
 
 phemex.create_limit_buy_order(symbol,pos_Size, bid, params)
+print('we just made an order')
+
 
 
 get_bid_ask('BTC/USDT')
